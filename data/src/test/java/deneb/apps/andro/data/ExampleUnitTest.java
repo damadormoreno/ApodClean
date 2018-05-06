@@ -1,4 +1,4 @@
-package andro.apps.deneb.data;
+package deneb.apps.andro.data;
 
 import org.junit.Test;
 

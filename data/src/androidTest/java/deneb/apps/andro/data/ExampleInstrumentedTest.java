@@ -1,4 +1,4 @@
-package andro.apps.deneb.data;
+package deneb.apps.andro.data;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("andro.apps.deneb.data.test", appContext.getPackageName());
+        assertEquals("deneb.apps.andro.data.test", appContext.getPackageName());
     }
 }
