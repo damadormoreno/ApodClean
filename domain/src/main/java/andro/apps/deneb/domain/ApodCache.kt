@@ -1,8 +1,9 @@
 package andro.apps.deneb.domain
 
 import andro.apps.deneb.domain.entities.ApodEntity
+import andro.apps.deneb.domain.entities.Optional
 import io.reactivex.Observable
-import java.util.*
+
 
 
 interface ApodCache {
@@ -13,5 +14,5 @@ interface ApodCache {
     fun getAll(): Observable<List<ApodEntity>>
     fun get(apodDate: String): Observable<Optional<ApodEntity>>
     fun search(query: String): Observable<List<ApodEntity>>
-    fun isEmpty(): Observable<Boolean>
+    fun isEmpty(): Boolean
 }

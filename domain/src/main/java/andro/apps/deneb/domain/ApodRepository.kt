@@ -1,10 +1,11 @@
 package andro.apps.deneb.domain
 
 import andro.apps.deneb.domain.entities.ApodEntity
+import andro.apps.deneb.domain.entities.Optional
 import io.reactivex.Observable
-import java.util.*
+
 
 interface ApodRepository {
-    fun getApodList(): Observable<List<ApodEntity>>
-    fun getApod(date: String): Observable<Optional<ApodEntity>>
+    fun getApodList(starDate: String, endDate: String): Observable<List<ApodEntity>>
+    fun getApodByDate(date: String): Observable<Optional<ApodEntity>>
 }
